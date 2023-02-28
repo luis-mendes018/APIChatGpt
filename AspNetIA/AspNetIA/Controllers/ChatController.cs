@@ -16,7 +16,7 @@ namespace AspNetIA.Controllers
         public async Task<IActionResult> UseChatGpt(string query)
         {
             string OutPutResult = "";
-            var openai = new OpenAIAPI("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");
+            var openai = new OpenAIAPI("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");
             CompletionRequest completionRequest = new CompletionRequest();
             completionRequest.Prompt = query;
             completionRequest.Model = OpenAI_API.Models.Model.DavinciText;
